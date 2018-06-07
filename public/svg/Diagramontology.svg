@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg style="width: 100%;height: auto;" width="77cm" height="53cm" viewBox="-494 -243 1532 1047" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="452.203" y="-240.812" width="140.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="452.203" y="-240.812" width="140.95" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="522.678" y="-217.012">
+      <tspan x="522.678" y="-217.012">Ontología Pmartwork</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="12.5502,-137.627 165.624,-137.627 151.793,-99.6269 -1.28067,-99.6269 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="12.5502,-137.627 165.624,-137.627 151.793,-99.6269 -1.28067,-99.6269 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="82.1715" y="-113.827">
+      <tspan x="82.1715" y="-113.827">C10003_Manifestation</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="270.85,-137.627 429.324,-137.627 415.493,-99.6269 257.019,-99.6269 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="270.85,-137.627 429.324,-137.627 415.493,-99.6269 257.019,-99.6269 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="343.172" y="-113.827">
+      <tspan x="343.172" y="-113.827">E22_Man_Made-Object</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="439.907,-138.627 594.267,-138.627 580.436,-100.627 426.076,-100.627 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="439.907,-138.627 594.267,-138.627 580.436,-100.627 426.076,-100.627 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="510.172" y="-114.827">
+      <tspan x="510.172" y="-114.827">E42_Identifier</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="607.726,-138.808 736.086,-138.808 722.255,-100.808 593.895,-100.808 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="607.726,-138.808 736.086,-138.808 722.255,-100.808 593.895,-100.808 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="664.991" y="-115.008">
+      <tspan x="664.991" y="-115.008">E50_Date</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="755.907,-137.627 871.267,-137.627 857.436,-99.6269 742.076,-99.6269 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="755.907,-137.627 871.267,-137.627 857.436,-99.6269 742.076,-99.6269 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="806.672" y="-113.827">
+      <tspan x="806.672" y="-113.827">E54_Dimension</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="889.907,-139.627 1027.27,-139.627 1013.44,-101.627 876.076,-101.627 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="889.907,-139.627 1027.27,-139.627 1013.44,-101.627 876.076,-101.627 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="951.672" y="-115.827">
+      <tspan x="951.672" y="-115.827">E36_Visual_Item</tspan>
+    </text>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-21.7373" y="-148.717" width="238" height="65"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-15.1943" y="-85.8984">
+    <tspan x="-15.1943" y="-85.8984">efrbrer.owl</tspan>
+  </text>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="238.362" y="-146.355" width="798" height="66"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="245.905" y="-84.2914">
+    <tspan x="245.905" y="-84.2914">cidoc-crm</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="97.2627" y="-116.217">
+    <tspan x="97.2627" y="-116.217"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="87.0777" y1="-98.6247" x2="202.153" y2="370.535"/>
+    <polygon style="fill: #000000" points="203.94,377.819 196.702,369.298 202.153,370.535 206.414,366.916 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="203.94,377.819 196.702,369.298 202.153,370.535 206.414,366.916 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="67.6512" y="181.784">
+    <tspan x="67.6512" y="181.784">en el rango de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-65.8102" y="-31.4415">
+    <tspan x="-65.8102" y="-31.4415">P3002_has_form_of_work  </tspan>
+    <tspan x="-65.8102" y="-15.4415">P3055_has_date_of_publication_or_distribution  </tspan>
+    <tspan x="-65.8102" y="0.55854">p2017_is_produced_by  </tspan>
+    <tspan x="-65.8102" y="16.5585">p3020_has_title_of_the_manifestation  </tspan>
+    <tspan x="-65.8102" y="32.5585">p3056_has_publisher_or_distributor  </tspan>
+    <tspan x="-65.8102" y="48.5585">p3057_has_place_of_publication_or_distribution  </tspan>
+    <tspan x="-65.8102" y="64.5585">p3096_has_access_address  </tspan>
+    <tspan x="-65.8102" y="80.5585">collection  </tspan>
+    <tspan x="-65.8102" y="96.5585">pages  </tspan>
+    <tspan x="-65.8102" y="112.559">sedexp  </tspan>
+    <tspan x="-65.8102" y="128.559">volume  </tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="81.7671" y="-63.0269">
+    <tspan x="81.7671" y="-63.0269">es dominio de</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="74.3511" y1="-98.6358" x2="54.8141" y2="-48.6939"/>
+    <polygon style="fill: #000000" points="52.0817,-41.7093 51.0685,-52.8436 54.8141,-48.6939 60.3812,-49.2005 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="52.0817,-41.7093 51.0685,-52.8436 54.8141,-48.6939 60.3812,-49.2005 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="209.925" y="-47.4878">
+    <tspan x="209.925" y="-47.4878">has_school  </tspan>
+    <tspan x="209.925" y="-31.4878">p108i_E12_p126_employed_medium  </tspan>
+    <tspan x="209.925" y="-15.4878">p108i_E12_p126_employed_support  </tspan>
+    <tspan x="209.925" y="0.512206">p108i_E12_p32_used_general_technique  </tspan>
+    <tspan x="209.925" y="16.5122">p14_main_carried_out_by  </tspan>
+    <tspan x="209.925" y="32.5122">p43_E54_has_dimension  </tspan>
+    <tspan x="209.925" y="48.5122">p65_E36_p138_represents_concept  </tspan>
+    <tspan x="209.925" y="64.5122">p65_E36_p138_represents_flora  </tspan>
+    <tspan x="209.925" y="80.5122">p65_E36_p138_represents_object  </tspan>
+    <tspan x="209.925" y="96.5122">p65_E36_p138_represents_person  </tspan>
+    <tspan x="209.925" y="112.512">p65_E36_p138_represents_place  </tspan>
+    <tspan x="209.925" y="128.512">p65_E36_p138_represents_wildlife  </tspan>
+    <tspan x="209.925" y="144.512">i_artwork_encyclopediaEntry  </tspan>
+    <tspan x="209.925" y="160.512">i_artwork_exhibitionactivity  </tspan>
+    <tspan x="209.925" y="176.512">i_artwork_multimediaresource  </tspan>
+    <tspan x="209.925" y="192.512">i_artwork_product  </tspan>
+    <tspan x="209.925" y="208.512">i_audioguide_artwork  </tspan>
+    <tspan x="209.925" y="224.512">i_author_artwork  </tspan>
+    <tspan x="209.925" y="240.512">i_signguide_artwork  </tspan>
+    <tspan x="209.925" y="256.512">relatedExhibition  </tspan>
+    <tspan x="209.925" y="272.512">p12i_was_present_at_exhibition  </tspan>
+    <tspan x="209.925" y="288.512">p130i_features_are_also_found_on  </tspan>
+    <tspan x="209.925" y="304.512">p14_carried_out_by  </tspan>
+    <tspan x="209.925" y="320.512">p1_is_identified_by  </tspan>
+    <tspan x="209.925" y="336.512">p2_has_type  </tspan>
+    <tspan x="209.925" y="352.512">p48_has_preferred_identifier  </tspan>
+    <tspan x="209.925" y="368.512">p65_shows_visual_item  </tspan>
+    <tspan x="209.925" y="384.512">p70i_is_documented_in  </tspan>
+    <tspan x="209.925" y="400.512">p7_took_place_at  </tspan>
+    <tspan x="209.925" y="416.512">Title  </tspan>
+    <tspan x="209.925" y="432.512">p3_has_note  </tspan>
+    <tspan x="209.925" y="448.512">p46i_E78_p102_forms_part_of  </tspan>
+    <tspan x="209.925" y="464.512">p55_has_current_location_id  </tspan>
+    <tspan x="209.925" y="480.512">p55_has_current_location_type  </tspan>
+    <tspan x="209.925" y="496.512">p62_E52_p79_has_time-span_beginning  </tspan>
+    <tspan x="209.925" y="512.512">p62_E52_p80_has_time-span_end  </tspan>
+    <tspan x="209.925" y="528.512">p65_E36_shows_visual_item  </tspan>
+    <tspan x="209.925" y="544.512">textDate  </tspan>
+    <tspan x="209.925" y="560.512">departmentId  </tspan>
+    <tspan x="209.925" y="576.512">departmentName  </tspan>
+    <tspan x="209.925" y="592.512">description  </tspan>
+    <tspan x="209.925" y="608.512">inventoryNumber  </tspan>
+    <tspan x="209.925" y="624.512">main_image  </tspan>
+    <tspan x="209.925" y="640.512">prominent  </tspan>
+    <tspan x="209.925" y="656.512">publicationDate  </tspan>
+    <tspan x="209.925" y="672.512">relevance  </tspan>
+    <tspan x="209.925" y="688.512">updateDate  </tspan>
+    <tspan x="209.925" y="704.512">dc:language  </tspan>
+    <tspan x="209.925" y="720.512">Tag  </tspan>
+    <tspan x="209.925" y="736.512">p27_moved_from  </tspan>
+    <tspan x="209.925" y="752.512">p3_has_note  </tspan>
+    <tspan x="209.925" y="768.512">p55_has_current_location  </tspan>
+    <tspan x="209.925" y="784.512">geo:lat  </tspan>
+    <tspan x="209.925" y="800.512">geo:long </tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="284.53" y1="-100.803" x2="277.318" y2="-65.7482"/>
+    <polygon style="fill: #000000" points="275.806,-58.402 272.924,-69.2045 277.318,-65.7482 282.719,-67.1892 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="275.806,-58.402 272.924,-69.2045 277.318,-65.7482 282.719,-67.1892 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="282.444" y="-68.7116">
+    <tspan x="282.444" y="-68.7116">es dominio de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="445.475" y="-38.7637">
+    <tspan x="445.475" y="-38.7637">p3_has_note_id </tspan>
+    <tspan x="445.475" y="-22.7637">p102_has_title </tspan>
+    <tspan x="445.475" y="-6.76373">p139_has_alternative_form </tspan>
+    <tspan x="445.475" y="9.23627">p4_has_time-span </tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="509.269" y="-73.0737">
+    <tspan x="509.269" y="-73.0737">es dominio de</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="503.256" y1="-100.627" x2="503.268" y2="-70.31"/>
+    <polygon style="fill: #000000" points="503.271,-62.81 498.267,-72.808 503.268,-70.31 508.267,-72.8119 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="503.271,-62.81 498.267,-72.808 503.268,-70.31 508.267,-72.8119 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="625.985" y1="-100.808" x2="626.371" y2="-71.3996"/>
+    <polygon style="fill: #000000" points="626.47,-63.9003 621.339,-73.8338 626.371,-71.3996 631.338,-73.965 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="626.47,-63.9003 621.339,-73.8338 626.371,-71.3996 631.338,-73.965 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="776.989" y1="-96.5606" x2="772.261" y2="-33.2057"/>
+    <polygon style="fill: #000000" points="771.703,-25.7265 767.461,-36.0709 772.261,-33.2057 777.433,-35.3267 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="771.703,-25.7265 767.461,-36.0709 772.261,-33.2057 777.433,-35.3267 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="910.416" y1="-101.627" x2="910.12" y2="-69.219"/>
+    <polygon style="fill: #000000" points="910.051,-61.7194 905.143,-71.7646 910.12,-69.219 915.142,-71.6732 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="910.051,-61.7194 905.143,-71.7646 910.12,-69.219 915.142,-71.6732 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="501.423" y1="-99.6705" x2="323.975" y2="305.099"/>
+    <polygon style="fill: #000000" points="320.964,311.968 320.4,300.801 323.975,305.099 329.558,304.816 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="320.964,311.968 320.4,300.801 323.975,305.099 329.558,304.816 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="504.344" y1="-99.6278" x2="377.315" y2="336.293"/>
+    <polygon style="fill: #000000" points="375.217,343.493 373.215,332.494 377.315,336.293 382.815,335.292 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="375.217,343.493 373.215,332.494 377.315,336.293 382.815,335.292 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="390.404" y="169.019">
+    <tspan x="390.404" y="169.019">en el rango de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="607.96" y="-47.4878">
+    <tspan x="607.96" y="-47.4878">century </tspan>
+    <tspan x="607.96" y="-31.4878">normDate </tspan>
+    <tspan x="607.96" y="-15.4878">precisionDate </tspan>
+    <tspan x="607.96" y="0.512206">typeDate </tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="634.678" y="-69.8021">
+    <tspan x="634.678" y="-69.8021">es dominio de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="751.907" y="-1.68648">
+    <tspan x="751.907" y="-1.68648">p2_E55_has_type</tspan>
+    <tspan x="751.907" y="14.3135">p90_E60_has_value</tspan>
+    <tspan x="751.907" y="30.3135">p91_E58_has_unit</tspan>
+    <tspan x="751.907" y="46.3135">conversion_factor</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="782.987" y="-39.2679">
+    <tspan x="782.987" y="-39.2679">es dominio de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="917.664" y="-65.6582">
+    <tspan x="917.664" y="-65.6582">es dominio de</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 365.115,34.7012 A 284.8,284.8 0 0 0 800.24,-98.6193"/>
+    <polygon style="fill: #000000" points="359.103,30.223 370.063,32.4309 365.017,34.8358 363.913,40.3159 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="359.103,30.223 370.063,32.4309 365.017,34.8358 363.913,40.3159 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.157" y="99.2265">
+    <tspan x="568.157" y="99.2265">en el rango de</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="884.949" y="-38.7637">
+    <tspan x="884.949" y="-38.7637">p1_is_identified_by </tspan>
+    <tspan x="884.949" y="-22.7637">p2_has_type </tspan>
+    <tspan x="884.949" y="-6.76373">p3_has_note Domain</tspan>
+    <tspan x="884.949" y="9.23627">imageHeight </tspan>
+    <tspan x="884.949" y="25.2363">imageLightSource </tspan>
+    <tspan x="884.949" y="41.2363">imageView </tspan>
+    <tspan x="884.949" y="57.2363">imageWidth</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1013.44 -101.627 C 1055.76,9.13472 554.632,522.848 393.052,522.848"/>
+    <polygon style="fill: #000000" points="385.552,522.848 395.552,517.848 393.052,522.848 395.552,527.848 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="385.552,522.848 395.552,517.848 393.052,522.848 395.552,527.848 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="451.209" y1="-209.532" x2="106.858" y2="-150.366"/>
+    <polygon style="fill: #000000" points="99.4665,-149.096 108.475,-155.717 106.858,-150.366 110.169,-145.862 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="99.4665,-149.096 108.475,-155.717 106.858,-150.366 110.169,-145.862 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="593.153" y1="-202.812" x2="616.249" y2="-156.078"/>
+    <polygon style="fill: #000000" points="619.572,-149.354 610.659,-156.104 616.249,-156.078 619.624,-160.534 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="619.572,-149.354 610.659,-156.104 616.249,-156.078 619.624,-160.534 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="14.7242" y="-241.874" width="167.938" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="14.7242" y="-241.874" width="167.938" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="98.6932" y="-218.074">
+      <tspan x="98.6932" y="-218.074">Ontología Pmnewsletter</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="98.6932" y1="-203.874" x2="97.9681" y2="-159.444"/>
+    <polygon style="fill: #000000" points="97.8458,-151.945 93.0096,-162.025 97.9681,-159.444 103.008,-161.862 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="97.8458,-151.945 93.0096,-162.025 97.9681,-159.444 103.008,-161.862 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-259.094" y="-239.693" width="189.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-259.094" y="-239.693" width="189.95" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-164.119" y="-215.893">
+      <tspan x="-164.119" y="-215.893">Ontología Multimediaresource</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-114.073" y1="-200.689" x2="4.4344" y2="-153.321"/>
+    <polygon style="fill: #000000" points="11.3987,-150.538 0.257196,-149.606 4.4344,-153.321 3.96874,-158.892 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="11.3987,-150.538 0.257196,-149.606 4.4344,-153.321 3.96874,-158.892 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-240.911,-102.013 -99.7895,-102.013 -113.62,-64.0132 -254.742,-64.0132 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-240.911,-102.013 -99.7895,-102.013 -113.62,-64.0132 -254.742,-64.0132 "/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-177.266" y="-78.2132">
+      <tspan x="-177.266" y="-78.2132">audio</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-207.033,-144.543 -117.31,-144.543 -131.141,-106.543 -220.864,-106.543 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-207.033,-144.543 -117.31,-144.543 -131.141,-106.543 -220.864,-106.543 "/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-169.087" y="-120.743">
+      <tspan x="-169.087" y="-120.743">audioguide</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-223.463,-59.4834 -127.052,-59.4834 -140.883,-21.4834 -237.294,-21.4834 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-223.463,-59.4834 -127.052,-59.4834 -140.883,-21.4834 -237.294,-21.4834 "/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-182.173" y="-35.6834">
+      <tspan x="-182.173" y="-35.6834">signguide</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-233.278,-14.7726 -136.867,-14.7726 -150.698,23.2274 -247.109,23.2274 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-233.278,-14.7726 -136.867,-14.7726 -150.698,23.2274 -247.109,23.2274 "/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-191.988" y="9.02743">
+      <tspan x="-191.988" y="9.02743">video</tspan>
+    </text>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-259.639" y="-157.938" width="164.419" height="197.69"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-253.006" y="35.9771">
+    <tspan x="-253.006" y="35.9771">efrbrer.owl</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-165.765" y1="-200.71" x2="-168.407" y2="-168.632"/>
+    <polygon style="fill: #000000" points="-169.023,-161.157 -173.185,-171.534 -168.407,-168.632 -163.219,-170.713 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-169.023,-161.157 -173.185,-171.534 -168.407,-168.632 -163.219,-170.713 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-256.616" y="-180.53">
+    <tspan x="-256.616" y="-180.53">No está en uso - Incorrecto - Ya no existe</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="-444.183" y="-238.603" width="134.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-444.183" y="-238.603" width="134.75" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-376.808" y="-214.803">
+      <tspan x="-376.808" y="-214.803">Ontología Pmauthor</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-474.818,-161.991 -287.495,-161.991 -301.326,-123.991 -488.649,-123.991 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-474.818,-161.991 -287.495,-161.991 -301.326,-123.991 -488.649,-123.991 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-388.072" y="-138.191">
+      <tspan x="-388.072" y="-138.191">E39_Actor / E39_Authorship</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-387.882" y1="-122.987" x2="-387.569" y2="-89.9387"/>
+    <polygon style="fill: #000000" points="-387.498,-82.439 -392.592,-92.3911 -387.569,-89.9387 -382.593,-92.486 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-387.498,-82.439 -392.592,-92.3911 -387.569,-89.9387 -382.593,-92.486 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-487.803" y="-109.647">
+    <tspan x="-487.803" y="-109.647">e-cidoc</tspan>
+  </text>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-492.801" y="-173.987" width="218.737" height="70.883"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-479.079" y="-81.2935">
+    <tspan x="-479.079" y="-81.2935">tagLabel</tspan>
+    <tspan x="-479.079" y="-65.2935">artWorkNumber</tspan>
+    <tspan x="-479.079" y="-49.2935">dc:language</tspan>
+    <tspan x="-479.079" y="-33.2935">identifier</tspan>
+    <tspan x="-479.079" y="-17.2935">p100i_E69_p4_death_date</tspan>
+    <tspan x="-479.079" y="-1.29353">p100i_E69_p4_death_year</tspan>
+    <tspan x="-479.079" y="14.7065">p100i_E69_p7_death_place</tspan>
+    <tspan x="-479.079" y="30.7065">p131_E82_p102_has_title</tspan>
+    <tspan x="-479.079" y="46.7065">p131_E82_p139_has_alternative_form</tspan>
+    <tspan x="-479.079" y="62.7065">p3_has_note</tspan>
+    <tspan x="-479.079" y="78.7065">p4_has_time-span</tspan>
+    <tspan x="-479.079" y="94.7065">p65_E36_shows_visual_item</tspan>
+    <tspan x="-479.079" y="110.706">p96_E67_p4_gave_birth_date</tspan>
+    <tspan x="-479.079" y="126.706">p96_E67_p4_gave_birth_year</tspan>
+    <tspan x="-479.079" y="142.706">p96_E67_p7_gave_birth_place</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-378.207" y="-81.7977">
+    <tspan x="-378.207" y="-81.7977">es dominio de</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-376.808" y1="-200.603" x2="-378.509" y2="-184.664"/>
+    <polygon style="fill: #000000" points="-379.305,-177.206 -383.216,-187.68 -378.509,-184.664 -373.272,-186.619 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-379.305,-177.206 -383.216,-187.68 -378.509,-184.664 -373.272,-186.619 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-188.548" y="265.212" width="152.5" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-188.548" y="265.212" width="152.5" height="38"/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-112.298" y="289.012">
+      <tspan x="-112.298" y="289.012">Ontología Pmexhibition</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-204.069" y="314.285" width="182.8" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-204.069" y="314.285" width="182.8" height="38"/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-112.669" y="338.085">
+      <tspan x="-112.669" y="338.085">Ontología EncyclopediaEntry</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-174.999" y="212.868" width="120.9" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-174.999" y="212.868" width="120.9" height="38"/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-114.549" y="236.668">
+      <tspan x="-114.549" y="236.668">Ontología Pmtour</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-208.703" y="383.263">
+    <tspan x="-208.703" y="383.263">Ontologías en desuso / no útiles</tspan>
+  </text>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-221.335" y="183.391" width="218.737" height="207.505"/>
+</svg>
