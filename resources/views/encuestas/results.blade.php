@@ -11,7 +11,7 @@
     <div class="col-md-12">
         <div class="row">
             <?php foreach($encuestas as $enc){ ?>
-            <?php var_dump(json_decode($enc->data)); ?>
+            <?php var_dump(json_decode($enc->dataaaa)); ?>
             <?php } ?>
         </div>
     </div>
