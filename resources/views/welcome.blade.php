@@ -114,18 +114,41 @@
                     <img src="/public/img/logotipo_MPOC.png" class="img-responsive centered" alt="logo">
                     <h3 style="text-align: center">Sistema web de visualización de itinerarios - UNED</h3>
                     <hr class="my-4">
+                    <p class="wp_paragraph" style="text-align:center;color:black;"><b>¿Sirve Wikipedia para algo más que
+                            mostrar información?</b></p>
+                    <ul class="wp_paragraph" style="color:black;">
+                        <li>Los recursos en abierto no son sólo una fuente de información de conceptos.</li>
+                        <li>Los datos enlazados permiten relacionar, categorizar y descubrir información en los
+                            textos.
+                        </li>
+                    </ul>
                     <p class="wp_paragraph" style="text-align:center;color:black;">
-                        Hoy en día, gracias a las fuentes de recursos web existentes, es posible obtener información acerca de casi cualquier lugar o monumento antes de ir a visitarlo. Pese a esto, es imposible obtener los beneficios que aportan los guías turísticos a las visitas, ya que un guía turístico no sólo ofrece esta información estática, sino también su contexto, las relaciones que existen entre los objetos de la visita y las anécdotas que surgen en relación con éstos. En este trabajo se propone un modelo de representación capaz de aportar ese dinamismo a la información existente en recursos enlazados en abierto en la Web que permita establecer relaciones y aporte una nueva forma de preparar una visita turística, tanto presencial como virtual.
-                        Además, se presenta este sistema de información web, un prototipo para la visualización de itinerarios.
+                        Este trabajo presenta la primera versión de un protitipo de generación de itinerarios que parte
+                        con <b>581 itinerarios obtenidos automáticamente</b> a partir de <a
+                                href="https://es.wikipedia.org" target="_blank">Wikipedia</a>, <a
+                                href="https://www.wikidata.org" target="_blank">Wikidata</a> y el <a
+                                href="https://www.museodelprado.es/" target="_blank">Museo del Prado</a>.
+                        Estos itinerarios, a su vez, están formados por <b>4823 obras</b>, <b>1504 personajes</b>, <b>14166
+                            referencias</b> y <b>25569 eventos</b>. De los eventos encontrados, 2799 están relacionados
+                        con obras, 2090 con personajes y 221 con referencias.
                     </p>
 
                     <div class="well wp_paragraph" style="color:black;">
                         <p>Tarea a realizar para familiarizarse:</p>
                         <ol>
-                            <li>Busque y visualize el itinerario "Cuadros relacionados con el personaje Diego Velázquez".</li>
-                            <li>Busque y visualize el itinerario "Cuadros relacionados con Adoración de los Reyes Magos".</li>
-                            <li>Rellena la encuesta.</li>
+                            <li> Busque información sobre varios itinerarios. Por ejemplo:
+                                <ul>
+                                    <li>Busque y visualice el itinerario "Cuadros relacionados con el personaje Diego
+                                        Velázquez".
+                                    </li>
+                                    <li>Busque y visualice el itinerario "Cuadros relacionados con Adoración de los
+                                        Reyes Magos".
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Rellene la encuesta.</li>
                         </ol>
+
                         <p style="text-align: center">Para cualquier duda relacionada con el sistema, puede acceder al <b><a target="_blank" href="/public/uploads/ANEXO_I_Manual_de_usuario_IEEE_1063_2001.pdf">Manual de usuario</a></b></p>
                     </div>
                     <p>
@@ -135,9 +158,8 @@
                         <a class="btn btn-primary btn-lg btn-block" href="/encuestas" role="button" style=""><i
                                     class="fa fa-edit"></i> Realizar encuesta</a>
                     </p>
-
                     <p>
-                        <a class="btn btn-primary btn-lg btn-block" href="/faq" role="button" style="">Consultar
+                        <a class="btn btn-primary btn-lg btn-block" href="/faq" role="button" style="">Consultar las
                             preguntas frecuentes</a>
                     </p>
                 </div>

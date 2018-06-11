@@ -115,11 +115,23 @@
             @endif
             <div class="" style="text-align: justify">
 
-                <img src="/public/img/logotipo_MPOC.png" class="img-responsive centered" alt="logo">
+                <a href="/"> <img src="/public/img/logotipo_MPOC.png" class="img-responsive centered" alt="logo"></a>
                 <h3 style="text-align: center">¿Qué es MPOC?</h3>
                 <hr class="my-4">
                 <p style="text-align: center;font-size: 20px;">El objetivo de esta web es mostrar los resultados de
                     generación de itinerarios automáticos.</p>
+                <p style="text-align: center">
+                    Hoy en día, gracias a las fuentes de recursos web existentes, es posible obtener información acerca
+                    de casi cualquier lugar o monumento antes de ir a visitarlo. Pese a esto, es imposible obtener los
+                    beneficios que aportan los guías turísticos a las visitas, ya que un guía turístico no sólo ofrece
+                    esta información estática, sino también su contexto, las relaciones que existen entre los objetos de
+                    la visita y las anécdotas que surgen en relación con éstos. En este trabajo se propone un modelo de
+                    representación capaz de aportar ese dinamismo a la información existente en recursos enlazados en
+                    abierto en la Web que permita establecer relaciones y aporte una nueva forma de preparar una visita
+                    turística, tanto presencial como virtual.
+                    Además, se presenta este sistema de información web, un prototipo para la visualización de
+                    itinerarios.
+                </p>
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
