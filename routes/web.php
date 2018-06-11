@@ -107,7 +107,7 @@ Route::get('/artworks/modal', 'ArtworkController@modal');
 Route::resource('/artworks', 'ArtworkController');
 
 
-
+Route::get('/encuestas/resultados', 'EncuestasController@results');
 Route::resource('/encuestas', 'EncuestasController');
 
 

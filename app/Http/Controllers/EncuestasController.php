@@ -69,6 +69,11 @@ class EncuestasController extends Controller
 
     }
 
+    public function results(){
+        $encuestas = Encuesta::all();
+        return View::make('encuestas.results')
+            ->with("encuestas", $encuestas);
+    }
     /**
      * Display the specified resource.
      *
