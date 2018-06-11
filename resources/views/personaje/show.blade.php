@@ -29,9 +29,9 @@
                                 <li>Nacimiento: {{ $personaje->fecha_nacimiento }}, {{ $personaje->lugar_nacimiento }}</li>
                                 <li>Fallecimiento: {{ $personaje->fecha_fallecimiento }}, {{ $personaje->lugar_fallecimiento }}</li>
                             </ul>
-                            <?php if($GLOBALS['AUTHOR']){ ?>
+
                             <a class="btn btn-primary btn-block" href="/personaje/{{ $personaje->id }}/edit">Editar personaje</a>
-                            <?php } ?>
+
                         </div>
                     </div>
                     <div class="well col-md-12 wp_paragraph">

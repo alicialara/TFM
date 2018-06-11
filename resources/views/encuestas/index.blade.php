@@ -57,7 +57,7 @@
                             </div>
                             <hr>
                             <div class="row" style="text-align: center;margin: 10px auto;">
-                                <p style="font-size: 19px;">Las siguientes preguntas evalúan el sistema. Por favor, responda de la forma más espontánea posible, valorando entre 1 y 7 los siguientes parámetros.</p>
+                                <p style="font-size: 19px;">Las siguientes preguntas evalúan la página web. Por favor, responda de la forma más espontánea posible, valorando entre 1 y 7 los siguientes parámetros.</p>
                             </div>
                             <div class="row">
                                 <table class="table table-bordered table-responsive">
@@ -492,16 +492,16 @@
                         <div class="form-group" id="page_2" style="font-weight:bold;font-size: 19px;text-align: center;">
 
                             <div class="form-group">
-                                <label>¿Qué es lo que más te ha gustado de este sistema y por qué?</label>
+                                <label>¿Qué es lo que más te ha gustado de esta página web y por qué?</label>
                                 {{ Form::textarea('oa_1', null, array('class' => 'form-control', 'style' => 'height:150px')) }}
                             </div>
                             <div class="form-group">
-                                <label>¿Qué es lo que menos te ha gustado de este sistema y por qué?</label>
+                                <label>¿Qué es lo que menos te ha gustado de esta página web y por qué?</label>
                                 {{ Form::textarea('oa_2', null, array('class' => 'form-control', 'style' => 'height:150px')) }}
                             </div>
 
                             <div class="form-group">
-                                <label>¿Cómo crees que se podría mejorar el sistema? ¿Te gustaría añadir alguna funcionalidad en concreto?</label>
+                                <label>¿Cómo crees que se podría mejorar la página web? ¿Te gustaría añadir alguna funcionalidad en concreto?</label>
                                 {{ Form::textarea('oa_3', null, array('class' => 'form-control', 'style' => 'height:150px')) }}
                             </div>
 

@@ -36,7 +36,7 @@
 
     $(document).ready(function() {
         $(function() {
-            $('#table').DataTable({
+            var table = $('#table').DataTable({
                 processing: true,
                 serverSide: true,
                 ajax: '{!! route('suggestions_get_table') !!}',
@@ -45,9 +45,19 @@
                     { data: 'suggestion', name: 'suggestion' },
 //                    { data: 'ver', name: 'ver' }
                 ],
-                iDisplayLength: 50,
-                aLengthMenu: [[10, 25, 50, 100,500,1000,-1], [10, 25, 50,100,500,1000, "Mostrar todos"]]
+                paginate: false,
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excelHtml5', 'pdf', 'print'
+                ]
             });
+
+            table.on( 'draw', function () {
+                var body = $( table.table().body() );
+
+                body.unhighlight();
+                body.highlight( table.search() );
+            } );
         });
     });
 </script>

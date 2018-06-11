@@ -43,7 +43,7 @@
                     <?php } ?>
 
                     <li class="dropdown">
-                        <a role="menuitem" href="{{ url('/encuestas') }}"><i class="fa fa-question"></i> <span class="nav-label">Encuestas</span></a>
+                        <a role="menuitem" href="{{ url('/encuestas') }}"><i class="fa fa-question"></i> <span class="nav-label">REALIZAR ENCUESTA</span></a>
                     </li>
 
 

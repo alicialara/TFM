@@ -141,7 +141,7 @@ class ItinerarioController extends Controller
             }elseif($element->id_evento){
                 $element->href = "/evento/" . $element->id_evento;
             }elseif($element->id_artwork){
-                $element->href = "/obra/" . $element->id_artwork;
+                $element->href = "/artworks/" . $element->id_artwork;
             }
         }
         foreach($html->find('p') as $element){

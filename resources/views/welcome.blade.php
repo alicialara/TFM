@@ -95,9 +95,9 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="flex-center position-ref full-height">
+<div class="container" style="margin-top: 30px;">
+    <div class="">
+        <div class="">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -108,16 +108,30 @@
                     @endif
                 </div>
             @endif
-            <div class="content">
-                <div class="well">
+            <div class="">
+                <div class="">
                     <img src="/public/img/logotipo_MPOC.png" class="img-responsive centered" alt="logo">
-                    <h3>MPOC es un sistema web de visualización de itinerarios diseñado como parte del trabajo fin de máster en Lenguajes y Sistemas Informáticos - UNED</h3>
+                    <h3 style="text-align: center">Sistema web de visualización de itinerarios - UNED</h3>
                     <hr class="my-4">
-                    <h4>
-                        Aquí escribir la motivación...
-                    </h4>
+                    <p class="wp_paragraph" style="text-align:center;color:black;">
+                        Hoy en día, gracias a las fuentes de recursos web existentes, es posible obtener información acerca de casi cualquier lugar o monumento antes de ir a visitarlo. Pese a esto, es imposible obtener los beneficios que aportan los guías turísticos a las visitas, ya que un guía turístico no sólo ofrece esta información estática, sino también su contexto, las relaciones que existen entre los objetos de la visita y las anécdotas que surgen en relación con éstos. En este trabajo se propone un modelo de representación capaz de aportar ese dinamismo a la información existente en recursos enlazados en abierto en la Web que permita establecer relaciones y aporte una nueva forma de preparar una visita turística, tanto presencial como virtual.
+                        Además, se presenta este sistema de información web, un prototipo para la visualización de itinerarios.
+                    </p>
+
+                    <div class="well wp_paragraph" style="color:black;">
+                        <p>Tarea a realizar para familiarizarse:</p>
+                        <ol>
+                            <li>Busque y visualize el itinerario "Cuadros relacionados con el personaje Diego Velázquez".</li>
+                            <li>Busque y visualize el itinerario "Cuadros relacionados con Adoración de los Reyes Magos".</li>
+                            <li>Rellena la encuesta.</li>
+                        </ol>
+                        <p style="text-align: center">Para cualquier duda relacionada con el sistema, puede acceder al <b><a target="_blank" href="/public/uploads/ANEXO_I_Manual_de_usuario_IEEE_1063_2001.pdf">Manual de usuario</a></b></p>
+                    </div>
                     <p>
-                        <a class="btn btn-primary btn-lg btn-block" href="/itinerario" role="button" style="padding: 41px 86px;"><i class="fa fa-search"></i> Búsqueda de itinerarios</a>
+                        <a class="btn btn-primary btn-lg btn-block" href="/itinerario" role="button" style=""><i class="fa fa-search"></i> Búsqueda de itinerarios</a>
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="/encuestas" role="button" style=""><i class="fa fa-search"></i> Realizar encuesta</a>
                     </p>
                 </div>
                 <?php if($GLOBALS['ADMIN']){ ?>

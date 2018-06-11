@@ -90,4 +90,4 @@ storage/framework/sessions/.gitignore
 storage/framework/views/.gitignore
 storage/logs/.gitignore
 tests/
-public/uploads/
+

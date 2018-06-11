@@ -19,6 +19,7 @@
                 {!! Form::open(['url'=>'itinerario/0','id'=>'myform','class'=>'form', 'method' => 'GET', 'target' => '_blank'])!!}
                 {!! Form::hidden('itinerario') !!}
                 <div class='form-group'>
+                    <p>* Para acceder al itinerario, es necesario seleccionarlo en la tabla.</p>
                     {!! Form::submit('Ver itinerario',['class'=>'input-lg btn btn-success', 'style' => 'width: 100%'])!!}
                 </div>
                 {!! Form::close() !!}
@@ -40,11 +41,17 @@
             $('select > option:selected').each(function() {
                 ids.push($(this).val());
             });
-            ids = ids.join(",");
-            $('input[name="itinerario"]').val(ids);
-            $('form').submit();
+            if(ids.length == 0){
+                alert("Para ver un itinerario, haz clic sobre él en la tabla.")
+            }else{
+                ids = ids.join(",");
+                $('input[name="itinerario"]').val(ids);
+                $('form').submit();
+            }
+
         });
     });
+//    $(':input[type="submit"]').prop('disabled', false);
 </script>
 <style>
     .non-selected-wrapper{

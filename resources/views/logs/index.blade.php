@@ -13,7 +13,9 @@
 
         <div class="panel-body">
             <div class="" style="margin: 10px auto;">
-                <?php var_dump($logs); ?>
+                <?php foreach($logs as $log){ ?>
+                    {{ $log->key }}
+                <?php } ?>
             </div>
         </div>
 

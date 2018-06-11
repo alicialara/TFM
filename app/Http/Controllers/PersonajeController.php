@@ -96,10 +96,7 @@ class PersonajeController extends Controller
      */
     public function store(Request $request)
     {
-        if(!$GLOBALS['AUTHOR']){
-            Session::flash('message', 'No tienes permisos para acceder a esta página.');
-            return Redirect::to('/');
-        }
+
         // validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
@@ -186,10 +183,7 @@ class PersonajeController extends Controller
      */
     public function edit($id)
     {
-        if(!$GLOBALS['AUTHOR']){
-            Session::flash('message', 'No tienes permisos para acceder a esta página.');
-            return Redirect::to('/personaje');
-        }
+
         $obj = ProcessedCharacter::find($id);
         if(!$obj || $obj == null){
             $ref = ProcessedReference::find($id);
