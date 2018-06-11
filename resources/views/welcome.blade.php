@@ -95,11 +95,12 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="flex-center position-ref full-height">
+<div class="container" style="margin-top: 30px;">
+    <div class="">
+        <div class="">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="{{ url(URL_BASE.'/encuestas') }}">Encuesta</a>
                     @if (Auth::check())
                         <a href="{{ url(URL_BASE.'/') }}">Inicio</a>
                     @else
@@ -108,17 +109,27 @@
                     @endif
                 </div>
             @endif
-            <div class="content">
-                <div class="well">
+            <div class="">
+                <div class="">
                     <img src="/public/img/logotipo_MPOC.png" class="img-responsive centered" alt="logo">
-                    <h3>MPOC es un sistema web de visualización de itinerarios diseñado como parte del trabajo fin de máster en Lenguajes y Sistemas Informáticos - UNED</h3>
+                    <h3 style="text-align: center">Sistema web de visualización de itinerarios - UNED</h3>
                     <hr class="my-4">
-                    <h4>
-                        Aquí escribir la motivación...
-                    </h4>
+                    <p class="wp_paragraph" style="text-align:  center;">
+                        Hoy en día, gracias a las fuentes de recursos web existentes, es posible obtener información acerca de casi cualquier lugar o monumento antes de ir a visitarlo. Pese a esto, es imposible obtener los beneficios que aportan los guías turísticos a las visitas, ya que un guía turístico no sólo ofrece esta información estática, sino también su contexto, las relaciones que existen entre los objetos de la visita y las anécdotas que surgen en relación con éstos. En este trabajo se propone un modelo de representación capaz de aportar ese dinamismo a la información existente en recursos enlazados en abierto en la Web que permita establecer relaciones y aporte una nueva forma de preparar una visita turística, tanto presencial como virtual.
+                    </p>
+
+                    <div class="well wp_paragraph">
+                        <p>Tarea a realizar:</p>
+                    <ol>
+                        <li>Busca y visualiza el itinerario "Cuadros relacionados con el personaje Diego Velázquez".</li>
+                        <li>Busca y visualiza el itinerario "Cuadros relacionados con Adoración de los Reyes Magos".</li>
+                        <li>Rellena la encuesta.</li>
+                    </ol>
+                    </div>
                     <p>
                         <a class="btn btn-primary btn-lg btn-block" href="/itinerario" role="button" style="padding: 41px 86px;"><i class="fa fa-search"></i> Búsqueda de itinerarios</a>
                     </p>
+
                 </div>
                 <?php if($GLOBALS['ADMIN']){ ?>
                 <div class="well">
