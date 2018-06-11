@@ -115,3 +115,4 @@ Route::get('suggestions_get_table', ['as'=>'suggestions_get_table','uses'=>'Surv
 Route::resource('/survey_suggestions', 'SurveySuggestionsController');
 
 
+Route::resource('/logs', 'LogsController');
