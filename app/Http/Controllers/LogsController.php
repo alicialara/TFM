@@ -2,10 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Log;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class LogsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('getUserRole');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +20,9 @@ class LogsController extends Controller
      */
     public function index()
     {
-        //
+        $logs = Log::all();
+        return View::make('logs.index')
+            ->with("logs", $logs);
     }
 
     /**
@@ -23,7 +32,7 @@ class LogsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

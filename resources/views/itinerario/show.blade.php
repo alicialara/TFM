@@ -19,17 +19,16 @@
 
         <div class="panel-body">
             <?php if($error == ''){ ?>
-                <div class="col-md-6 col-sm-12 well well-lg" style="margin: 10px auto;">
-                    <h2 style="text-align: center;"> <b>{{ $data->name_artwork }}</b> </h2>
-                    <a role="button" class="btn btn-primary btn-block" target="_blank" href="/artworks/{{ $data->id_artwork }}"> <i class="fas fa-info"></i> Saber más sobre la obra</a>
-                    <img src="{{ $data->image_artwork }}" class="img-rounded img-responsive" alt="{{ $data->name_artwork }}" style="max-height: 1000px;">
-                    <div class="caption">
-                    <p style="text-align: center;">{{ $data->name_artwork }}</p>
-                </div>
-                </div>
-                <div class="parrafo_texto col-md-6 col-sm-12" style="margin: 10px auto;">
 
-                    <?php echo html_entity_decode($data->text); ?>
+                <div class="col-md-12">
+                    <h2 style="text-align: center;"> <b>{{ $data->name_artwork }}</b> </h2>
+                    <a role="button" class="btn btn-primary btn-block" target="_blank" href="/artworks/{{ $data->id_artwork }}">
+                        <img src="{{ $data->image_artwork }}" class="img-responsive img-thumbnail" alt="{{ $data->name_artwork }}" style="max-height: 500px;">
+                    </a>
+                    <div class="caption"><p style="text-align: center;">{{ $data->name_artwork }}</p></div>
+                    <div class="parrafo_texto" style="">
+                        <?php echo html_entity_decode($data->text); ?>
+                    </div>
                 </div>
             <?php }else{ ?>
                 <div class="alert alert-danger">

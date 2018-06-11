@@ -25,11 +25,12 @@ class SurveySuggestionsController extends Controller
         return View::make('survey_suggestions.index');
     }
     public function get_table(){
-
-        $surveys_s = DB::table('surveys_suggestions')->select('id_question','suggestion')->get();
-        $datatable =  Datatables::of($surveys_s)
-            ->addColumn('ver','<a href="'.URL_BASE.'/survey_suggestions/{{ $id_question }}" target="_blank"><i class="fa fa-search" aria-hidden="true"></i> Ver</a> ')
-            ->make(true);
+        if($GLOBALS['ADMIN']){
+            $surveys_s = DB::table('surveys_suggestions')->select('id_question','suggestion')->get();
+            $datatable =  Datatables::of($surveys_s)
+                ->addColumn('ver','<a href="'.URL_BASE.'/survey_suggestions/{{ $id_question }}" target="_blank"><i class="fa fa-search" aria-hidden="true"></i> Ver</a> ')
+                ->make(true);
+        }
         return $datatable;
 
     }
