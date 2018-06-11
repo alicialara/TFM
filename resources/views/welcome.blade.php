@@ -103,6 +103,7 @@
                     @if (Auth::check())
                         <a href="{{ url(URL_BASE.'/') }}">Inicio</a>
                     @else
+
                         <a href="{{ url(URL_BASE.'/login') }}">Iniciar sesión</a>
                         <a href="{{ url(URL_BASE.'/register') }}">Registrarse</a>
                     @endif
@@ -131,7 +132,13 @@
                         <a class="btn btn-primary btn-lg btn-block" href="/itinerario" role="button" style=""><i class="fa fa-search"></i> Búsqueda de itinerarios</a>
                     </p>
                     <p>
-                        <a class="btn btn-primary btn-lg btn-block" href="/encuestas" role="button" style=""><i class="fa fa-search"></i> Realizar encuesta</a>
+                        <a class="btn btn-primary btn-lg btn-block" href="/encuestas" role="button" style=""><i
+                                    class="fa fa-edit"></i> Realizar encuesta</a>
+                    </p>
+
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="/faq" role="button" style="">Consultar
+                            preguntas frecuentes</a>
                     </p>
                 </div>
                 <?php if($GLOBALS['ADMIN']){ ?>

@@ -11,14 +11,17 @@
 */
 
 
-use Illuminate\Support\Facades\Input;
-use App\Http\Urls;
-use App\Http\Crawler\Crawler;
 use App\Evento;
+use App\Http\Crawler\Crawler;
+use App\Http\Urls;
 
 
 Route::get('/', function () {
     return view('welcome');
+})->middleware('getUserRole');
+
+Route::get('/faq', function () {
+    return view('quienes_somos');
 })->middleware('getUserRole');
 
 
