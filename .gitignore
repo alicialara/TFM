@@ -75,3 +75,19 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+.idea/TFM.iml
+.idea/blade.xml
+.idea/copyright/
+.idea/deployment.xml
+.idea/encodings.xml
+.idea/modules.xml
+bootstrap/
+config/
+storage/app/
+storage/framework/.gitignore
+storage/framework/cache/
+storage/framework/sessions/.gitignore
+storage/framework/views/.gitignore
+storage/logs/.gitignore
+tests/
+public/uploads/
