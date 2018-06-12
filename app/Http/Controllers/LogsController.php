@@ -10,8 +10,8 @@ class LogsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
-        $this->middleware('getUserRole');
+//        $this->middleware('auth');
+//        $this->middleware('getUserRole');
     }
     /**
      * Display a listing of the resource.
@@ -20,13 +20,7 @@ class LogsController extends Controller
      */
     public function index()
     {
-//        $query = "SELECT * FROM `log`
-//                    WHERE  `key` != 'home'
-//                    AND url NOT LIKE 'http://tfm/%'
-//                    AND url NOT LIKE 'http://aluned.laraclares.com/survey_suggestions'
-//                    AND url NOT LIKE '%_get_table%'
-//                    AND url NOT LIKE '%/log%'";
-//        $logs = DB::select( DB::raw($query) );
+
 
         $total_users_q = "SELECT DISTINCT(id_usuario) AS total_users FROM `log`
 WHERE url NOT LIKE 'http://tfm/%'
@@ -54,13 +48,14 @@ WHERE url LIKE 'http://aluned.laraclares.com/itinerario/%' AND url NOT LIKE '%_g
         $total_iti_r = DB::select(DB::raw($total_iti_q));
         $total_iti = count($total_iti_r);
 
-//        $ajax_data = $this->selectAjax();
+        $ajax_data = $this->selectAjax();
 
         return View::make('logs.index')
             ->with("total_users", $total_users)
             ->with("total_urls", $total_urls)
             ->with("total_distict_iti", $total_distict_iti)
-            ->with("total_iti", $total_iti)//            ->with("ajax_data", $ajax_data)
+            ->with("total_iti", $total_iti)
+            ->with("ajax_data", $ajax_data)
             ;
     }
 
@@ -80,38 +75,35 @@ WHERE url LIKE 'http://aluned.laraclares.com/itinerario/%' AND url NOT LIKE '%_g
         $array_nodes_aux = array();
         $array_edges = array();
 
-        $label_first = "/" . " - " . $home_count;
+        $label_first = "http://aluned.laraclares.com/" . " - " . $home_count . " en total";
         $array_nodes[$label_first] = $label_first;
-        $array_nodes_aux[] = ["id" => $label_first, "label" => $label_first];
+        $array_nodes_aux[] = ["id" => $label_first, "label" => $label_first, "margin" => 300];
         $value = $array['http://aluned.laraclares.com/'];
         $total_count = $value[0];
         $urls = $value[1];
 
         foreach ($urls as $key => $value) {
-            $key = str_replace("http://aluned.laraclares.com", "", $key) . " - " . $value[0];
-//            $find = arrayC_search($key, $array_nodes);
-            if ($key == '/itinerario/0?selected_values=24 - 0,52356020942408') {
-                echo "para";
-            }
-            if (!in_array($key, $array_nodes)) {
-                $array_nodes[$key] = $key;
-                $array_nodes_aux[] = ["id" => $key, "label" => $key];
-            }
-            $array_edges[] = ["from" => $label_first, "to" => $key];
-
-
-            $urls_next = $value[1];
-            foreach ($urls_next[1] as $aux_key => $aux_value) {
-                $aux_key = str_replace("http://aluned.laraclares.com", "", $aux_key) . " - " . $aux_value;
-                if ($aux_key == '/itinerario/0?selected_values=24 - 0,52356020942408') {
-                    echo "para";
+//            $key = str_replace("http://aluned.laraclares.com","", $key). " - " . round($value[0],1)."%";
+            if ($value[0] > 2) {
+                $key = $key . " - " . round($value[0], 1) . "%";
+                if (!in_array($key, $array_nodes)) {
+                    $array_nodes[$key] = $key;
+                    $array_nodes_aux[] = ["id" => $key, "label" => $key, "margin" => "30px"];
                 }
-//                $findCC = array_search($aux_key, $array_nodes);
-                if (!in_array($aux_key, $array_nodes)) {
-                    $array_nodes[$aux_key] = $aux_key;
-                    $array_nodes_aux[] = ["id" => $aux_key, "label" => $aux_key];
+                $array_edges[] = ["from" => $label_first, "to" => $key];
+
+                $urls_next = $value[1];
+                foreach ($urls_next[1] as $aux_key => $aux_value) {
+                    //                $aux_key = str_replace("http://aluned.laraclares.com","", $aux_key) . " - " . round($aux_value,1)."%";
+                    if ($aux_value > 2) {
+                        $aux_key = $aux_key . " - " . round($aux_value, 1) . "%";
+                        if (!in_array($aux_key, $array_nodes)) {
+                            $array_nodes[$aux_key] = $aux_key;
+                            $array_nodes_aux[] = ["id" => $aux_key, "label" => $aux_key];
+                        }
+                        $array_edges[] = ["from" => $key, "to" => $aux_key];
+                    }
                 }
-                $array_edges[] = ["from" => $key, "to" => $aux_key];
             }
         }
 
@@ -132,6 +124,8 @@ WHERE url LIKE 'http://aluned.laraclares.com/itinerario/%' AND url NOT LIKE '%_g
                         AND url NOT LIKE 'http://aluned.laraclares.com/survey_suggestions'
                         AND url NOT LIKE '%_get_table%'
                         AND url NOT LIKE '%/log%'
+                        AND url NOT LIKE '%segmentos%'
+                        AND url NOT LIKE '%ajax%'
                         AND id > " . $user_home->id . "
                         ORDER BY id ASC
                         LIMIT 1";

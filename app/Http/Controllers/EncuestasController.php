@@ -71,8 +71,60 @@ class EncuestasController extends Controller
 
     public function results(){
         $encuestas = Encuesta::all();
+
+        $fortalezas = array();
+        $debilidades = array();
+        $mejorable = array();
+        $data_pie_1 = array();
+        $data_pie_2 = array();
+
+        $edad = array(
+            "0" => "Hasta 20 años",
+            "1" => "Entre 21 y 30 años",
+            "2" => "Entre 31 y 60 años",
+            "3" => "Más de 61 años",
+        );
+        $estudios = array(
+            "0" => "Estudios secundarios (Bachiller / Formación Profesional)",
+            "1" => "Estudios superiores (Universitarios / Formación Profesional Superior)",
+            "2" => "Sin estudios / estudios primarios"
+        );
+        $edades = ["0" => 0, "1" => 0, "2" => 0, "3" => 0];
+        $estudios_ = ["0" => 0, "1" => 0, "2" => 0];
+        $conocimiento_previo = 0;
+        foreach ($encuestas as $encuesta) {
+            $data = json_decode($encuesta->data);
+            if (strlen($data->oa_1) > 1) {
+                $fortalezas[] = $encuesta->oa_1;
+            }
+            if (strlen($data->oa_2) > 1) {
+                $debilidades[] = $encuesta->oa_1;
+            }
+            if (strlen($data->oa_3) > 1) {
+                $mejorable[] = $encuesta->oa_1;
+            }
+            $edades[$data->edad] = $edades[$data->edad] + 1;
+            $estudios_[$data->estudios] = $estudios_[$data->estudios] + 1;
+            if (!isset($data->q_1)) {
+                $data->q_1 = 3;
+            }
+            $conocimiento_previo += $data->q_1;
+        }
+        foreach ($edades as $key => $value) {
+            $data_pie_1[] = ["y" => round(($value * 100) / count($encuestas), 1), "label" => $edad[$key]];
+        }
+        foreach ($estudios_ as $key => $value) {
+            $data_pie_2[] = ["y" => round(($value * 100) / count($encuestas), 1), "label" => $estudios[$key]];
+        }
+        $conocimiento_previo = round($conocimiento_previo / count($encuestas), 1);
         return View::make('encuestas.results')
-            ->with("encuestas", $encuestas);
+            ->with("encuestas", $encuestas)
+            ->with("fortalezas", $fortalezas)
+            ->with("debilidades", $debilidades)
+            ->with("mejorable", $mejorable)
+            ->with("data_pie_1", json_encode($data_pie_1))
+            ->with("data_pie_2", json_encode($data_pie_2))
+            ->with("conocimiento_previo", $conocimiento_previo);
     }
     /**
      * Display the specified resource.
