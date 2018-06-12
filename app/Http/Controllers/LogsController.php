@@ -48,6 +48,36 @@ WHERE url LIKE 'http://aluned.laraclares.com/itinerario/%' AND url NOT LIKE '%_g
         $total_iti_r = DB::select(DB::raw($total_iti_q));
         $total_iti = count($total_iti_r);
 
+
+        $total_usua_solo_1_url_q = "select id_usuario, count(url) as total_pages from `log`
+                    where id_usuario != 1
+                    group by id_usuario
+                    having count(url)=1";
+        $total_usua_solo_1_url_r = DB::select(DB::raw($total_usua_solo_1_url_q));
+        $total_usua_solo_1_url_ = count($total_usua_solo_1_url_r);
+
+        $total_usua_more_1_url_q = "select count(url) as total_pages from `log`
+where id_usuario != 1
+group by id_usuario
+having count(url)>1";
+        $total_usua_more_1_url_r = DB::select(DB::raw($total_usua_more_1_url_q));
+        $cuenta_total = 0;
+        foreach($total_usua_more_1_url_r as $more){
+            $cuenta_total += $more->total_pages;
+        }
+        $media_usua_more_1_url = round($cuenta_total / count($total_usua_more_1_url_r),1);
+
+        $total_usua_more_1_url_q = "select count(url) as total_pages from `log`
+where id_usuario != 1
+group by id_usuario";
+        $total_usua_more_1_url_r = DB::select(DB::raw($total_usua_more_1_url_q));
+        $cuenta_total = 0;
+        foreach($total_usua_more_1_url_r as $more){
+            $cuenta_total += $more->total_pages;
+        }
+        $media_usua_url = round($cuenta_total / count($total_usua_more_1_url_r),1);
+
+
         $ajax_data = $this->selectAjax();
 
         return View::make('logs.index')
@@ -56,6 +86,9 @@ WHERE url LIKE 'http://aluned.laraclares.com/itinerario/%' AND url NOT LIKE '%_g
             ->with("total_distict_iti", $total_distict_iti)
             ->with("total_iti", $total_iti)
             ->with("ajax_data", $ajax_data)
+            ->with("total_usua_solo_1_url_", $total_usua_solo_1_url_)
+            ->with("media_usua_more_1_url", $media_usua_more_1_url)
+            ->with("media_usua_url", $media_usua_url)
             ;
     }
 

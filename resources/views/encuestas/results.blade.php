@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
-            <div class="small-box bg-yellow">
+            <div class="small-box bg-red">
                 <div class="inner">
                     <h3><?php echo count($debilidades); ?> / <?php echo count($mejorable); ?></h3>
 
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
-            <div class="small-box bg-red">
+            <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3><?php echo $conocimiento_previo; ?> / 7</h3>
 
