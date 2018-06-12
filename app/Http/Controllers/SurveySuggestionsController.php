@@ -26,7 +26,7 @@ class SurveySuggestionsController extends Controller
     }
     public function get_table(){
 //        if($GLOBALS['ADMIN']){
-            $surveys_s = DB::table('surveys_suggestions')->select('id_question','suggestion')->get();
+            $surveys_s = DB::table('surveys_suggestions')->where("file","=","experiencia_v1_1909_sugerencias")->select('id_question','suggestion')->get();
             $datatable =  Datatables::of($surveys_s)
                 ->addColumn('ver','<a href="'.URL_BASE.'/survey_suggestions/{{ $id_question }}" target="_blank"><i class="fa fa-search" aria-hidden="true"></i> Ver</a> ')
                 ->make(true);

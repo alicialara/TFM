@@ -39,7 +39,8 @@ AND url NOT LIKE '%/log%'";
         $total_urls = count($total_urls_r);
 
         $total_distict_iti_q = "SELECT DISTINCT(url) AS total_urls FROM `log`
-WHERE url LIKE 'http://aluned.laraclares.com/itinerario/0?selected_values=%'";
+WHERE url LIKE 'http://aluned.laraclares.com/itinerario/0?selected_values=%'
+OR url LIKE 'http://aluned.laraclares.com/itinerario/0?itinerario=%'";
         $total_distict_iti_r = DB::select(DB::raw($total_distict_iti_q));
         $total_distict_iti = count($total_distict_iti_r);
 

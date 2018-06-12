@@ -83,9 +83,9 @@
                      aria-labelledby="headingOne">
                     <div class="panel-body">
                         <ul>
-                        <?php foreach($fortalezas as $fortaleza){ ?>
-                        <li><?php echo $fortaleza; ?></li>
-                        <?php } ?>
+                            <?php foreach($fortalezas as $fortaleza){ ?>
+                            <li><?php echo $fortaleza; ?></li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -133,12 +133,44 @@
         </div>
 
 
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <div class="col-md-12" style="background-color: whitesmoke;">
+
+            <div class="col-md-12" style="margin-top: 20px;"><h2>A continuación, se muestran los grafos generados a partir de las sugerencias recibidas.</h2></div>
+            <div class="col-md-12"><h3 style="text-align: center;font-size: 20px;">¿Qué es lo que más te ha gustado de esta página web y por qué?</h3></div>
+
+            <div class="col-md-12" style="margin: 10px auto;background-color: white;">
+                <div id="mynetwork1" style="width: 100%;height: 800px;"></div>
+            </div>
+            <div class="col-md-12"><h4>Contenido del nodo:</h4><pre id="nodeContent1"></pre></div>
 
 
+            <hr>
+            <hr>
+
+            <div class="col-md-12"><h3 style="text-align: center;font-size: 20px;">¿Qué es lo que menos te ha gustado de esta página web y por qué?</h3></div>
+
+            <div class="col-md-12" style="margin: 10px auto;background-color: white;">
+                <div id="mynetwork2" style="width: 100%;height: 800px;"></div>
+            </div>
+            <div class="col-md-12"><h4>Contenido del nodo:</h4><pre id="nodeContent2"></pre></div>
+
+
+
+            <hr>
+            <hr>
+
+            <div class="col-md-12"><h3 style="text-align: center;font-size: 20px;">¿Cómo crees que se podría mejorar la página web? ¿Te gustaría añadir alguna funcionalidad en concreto?</h3></div>
+
+            <div class="col-md-12" style="margin: 10px auto;background-color: white;">
+                <div id="mynetwork3" style="width: 100%;height: 800px;"></div>
+            </div>
+            <div class="col-md-12"><h4>Contenido del nodo:</h4><pre id="nodeContent3"></pre></div>
+
+        </div>
     </div>
 @endsection
 @push('scripts_datatables')
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script>
 
     $( document ).ready(function() {
@@ -178,6 +210,101 @@
             }]
         });
         chart.render();
+    });
+</script>
+@endpush
+
+@push('scripts_graphs')
+
+<script type="text/javascript">
+    /**
+     * This function fills the DataSets. These DataSets will update the network.
+     */
+
+    function create_graph_from_gephi(json_file, network_container, data_container){
+        $.getJSON( json_file, function( gephiJSON ) {
+            var network;
+
+            var nodes = new vis.DataSet();
+            var edges = new vis.DataSet();
+            var gephiImported;
+            var nodeContent = document.getElementById(data_container);
+            var container = document.getElementById(network_container);
+//            var parsed = vis.network.gephiParser.parseGephi(gephiJSON, {});
+//            var data = {
+//                nodes: parsed.nodes,
+//                edges: parsed.edges
+//            };
+            var parserOptions = {
+                edges: {
+                    inheritColors: false
+                },
+                nodes: {
+                    fixed: true,
+                    parseColor: false
+                }
+            };
+
+// parse the gephi file to receive an object
+// containing nodes and edges in vis format.
+            var parsed = vis.network.convertGephi(gephiJSON, parserOptions);
+
+// provide data in the normal fashion
+            var data = {
+                nodes: parsed.nodes,
+                edges: parsed.edges
+            };
+            nodes.add(parsed.nodes);
+            edges.add(parsed.edges);
+            var options = {
+                nodes: {
+                    shape: 'dot',
+                    size: 13,
+                    font: {
+                        size: 15
+                    },
+                    borderWidth: 1
+                },
+                edges: {
+                    width: 2,
+                    smooth: {
+                        type: 'continuous'
+                    }
+                },
+                interaction: {
+                    zoomView: true
+                },
+                layout: {
+                    randomSeed: undefined,
+                    improvedLayout: true
+                },
+                physics: {
+                    stabilization: true,
+                    barnesHut: {
+                        gravitationalConstant: -80,
+                        springConstant: 0.002,
+                        springLength: 150
+                    }
+                }
+            };
+            options.height = '100%';
+            options.width = '100%';
+            network = new vis.Network(container, data, options);
+            network.on('click', function (params) {
+                if (params.nodes.length > 0) {
+                    var data = nodes.get(params.nodes[0]); // get the data from selected node
+                    nodeContent.innerHTML = JSON.stringify(data, undefined, 3); // show the data in the div
+                }
+            });
+            network.fit(); // zoom to fit
+        });
+    }
+
+    $( document ).ready(function() {
+        create_graph_from_gephi("/public/uploads/oa_1.json", 'mynetwork1', 'nodeContent1')
+        create_graph_from_gephi("/public/uploads/oa_2.json", 'mynetwork2', 'nodeContent2')
+        create_graph_from_gephi("/public/uploads/oa_3.json", 'mynetwork3', 'nodeContent3')
+
     });
 </script>
 @endpush
