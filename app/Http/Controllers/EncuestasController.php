@@ -95,13 +95,13 @@ class EncuestasController extends Controller
         foreach ($encuestas as $encuesta) {
             $data = json_decode($encuesta->data);
             if (strlen($data->oa_1) > 1) {
-                $fortalezas[] = $encuesta->oa_1;
+                $fortalezas[] = $data->oa_1;
             }
             if (strlen($data->oa_2) > 1) {
-                $debilidades[] = $encuesta->oa_1;
+                $debilidades[] = $data->oa_2;
             }
             if (strlen($data->oa_3) > 1) {
-                $mejorable[] = $encuesta->oa_1;
+                $mejorable[] = $data->oa_3;
             }
             $edades[$data->edad] = $edades[$data->edad] + 1;
             $estudios_[$data->estudios] = $estudios_[$data->estudios] + 1;

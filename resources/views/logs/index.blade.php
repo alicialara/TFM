@@ -103,14 +103,13 @@
                 borderWidth: 2
             },
             interaction: {
-
                 zoomView: false
             },
             layout: {
                 hierarchical: {
                     enabled: true,
                     levelSeparation: 550,
-                    nodeSpacing: 50,
+                    nodeSpacing: 10,
                     treeSpacing: 10,
                     blockShifting: true,
                     edgeMinimization: true,

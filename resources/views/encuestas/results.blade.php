@@ -12,7 +12,7 @@
     <div class="col-md-12">
 
 
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-md-3 col-sm-12">
             <div class="small-box bg-aqua">
                 <div class="inner">
                     <h3><?php echo count($encuestas); ?></h3>
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-md-3 col-sm-12">
             <div class="small-box bg-green">
                 <div class="inner">
                     <h3><?php echo count($fortalezas); ?></h3>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-md-3 col-sm-12">
             <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3><?php echo count($debilidades); ?> / <?php echo count($mejorable); ?></h3>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-md-3 col-sm-12">
             <div class="small-box bg-red">
                 <div class="inner">
                     <h3><?php echo $conocimiento_previo; ?> / 7</h3>
@@ -60,29 +60,33 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
             <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
             <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
         </div>
         <div id="data_pie_1" style="display: none;"><?php echo $data_pie_1; ?></div>
         <div id="data_pie_2" style="display: none;"><?php echo $data_pie_2; ?></div>
 
-        <div class="col-md-12">
+        <div class="col-md-12" style="margin-top: 20px;">
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <i class="fa fa-angle-double-right"></i> Lista de puntos fuertes
                         </a>
                     </h4>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                     aria-labelledby="headingTwo">
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingOne">
                     <div class="panel-body">
-
+                        <ul>
+                        <?php foreach($fortalezas as $fortaleza){ ?>
+                        <li><?php echo $fortaleza; ?></li>
+                        <?php } ?>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -91,14 +95,38 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <i class="fa fa-angle-double-right"></i> Lista de puntos fuertes
+                            <i class="fa fa-angle-double-right"></i> Lista de puntos débiles
                         </a>
                     </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
                      aria-labelledby="headingTwo">
                     <div class="panel-body">
-
+                        <ul>
+                            <?php foreach($debilidades as $debilidad){ ?>
+                            <li><?php echo $debilidad; ?></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fa fa-angle-double-right"></i> Ideas de mejora
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <ul>
+                            <?php foreach($mejorable as $mejora){ ?>
+                            <li><?php echo $mejora; ?></li>
+                            <?php } ?>
+                        </ul>
                     </div>
                 </div>
             </div>
