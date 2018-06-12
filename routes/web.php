@@ -119,3 +119,8 @@ Route::resource('/survey_suggestions', 'SurveySuggestionsController');
 
 
 Route::resource('/logs', 'LogsController');
+//Route::get('select-ajax-logs', ['as'=>'select-ajax-logs','uses'=>'LogsController@selectAjax']);
+Route::post('select-ajax-logs', ['as' => 'select-ajax-logs', 'uses' => 'LogsController@selectAjax']);
+
+
+

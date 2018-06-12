@@ -28,6 +28,7 @@
     <script src="<?php echo URL_BASE_PUBLIC; ?>/js/inspinia.js"></script>
 
 
+
     <link href="<?php echo URL_BASE_PUBLIC; ?>/css/plugins/jQueryUI/jquery-ui.css" rel="stylesheet">
 
 
@@ -36,6 +37,7 @@
     <link href="<?php echo URL_BASE_PUBLIC; ?>/css/style.css" rel="stylesheet">
 
     <link href="<?php echo URL_BASE_PUBLIC; ?>/js/plugins/multi-js/src/multi.css" rel="stylesheet">
+
     <!-- Scripts -->
     <script>
         window.Laravel = '<?php echo json_encode([
@@ -109,7 +111,12 @@
 
     <script src="<?php echo URL_BASE_PUBLIC; ?>/js/plugins/tinymce/js/tinymce/tinymce.min.js"></script>
 
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css"/>
+
     @include('scripts_tinymce')
+    @stack('scripts_graphs')
 
     <script>
         $(document).ready(function () {
