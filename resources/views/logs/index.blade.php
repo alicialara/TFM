@@ -134,24 +134,27 @@
         var options = {
             nodes: {
                 shape: 'dot',
-                size: 15,
-//                color : '#ECBF26', // select color
-
+                size: 10,
                 font: {
-                    size: 18,
-//                    color : '#ffffff'
+                    size: 20
                 },
-                borderWidth: 2
+                borderWidth: 1
+            },
+            edges: {
+                width: 1,
+//                smooth: {
+//                    type: 'continuous'
+//                }
             },
             interaction: {
-                zoomView: false
+                zoomView: true
             },
             layout: {
                 hierarchical: {
                     enabled: true,
-                    levelSeparation: 550,
-                    nodeSpacing: 10,
-                    treeSpacing: 10,
+                    levelSeparation:800,
+                    nodeSpacing: 50,
+                    treeSpacing: 20,
                     blockShifting: true,
                     edgeMinimization: true,
                     parentCentralization: true,
@@ -160,6 +163,17 @@
                     direction: 'LR'        // UD, DU, LR, RL
 //                    sortMethod: 'hubsize'   // hubsize, directed
                 }
+            },
+            physics: {
+                enabled: false,
+                hierarchicalRepulsion: {
+                    centralGravity: 0.0,
+                    springLength: 500,
+                    springConstant: 0.01,
+                    nodeDistance: 400,
+                    damping: 0.09
+                },
+                solver: 'hierarchicalRepulsion'
             }
         };
         options.height = '100%';

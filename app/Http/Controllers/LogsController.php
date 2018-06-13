@@ -118,7 +118,7 @@ group by id_usuario";
 
         foreach ($urls as $key => $value) {
 //            $key = str_replace("http://aluned.laraclares.com","", $key). " - " . round($value[0],1)."%";
-            if ($value[0] > 2) {
+            if ($value[0] > 3) {
                 $key = $key . " - " . round($value[0], 1) . "%";
                 if (!in_array($key, $array_nodes)) {
                     $array_nodes[$key] = $key;
@@ -129,7 +129,7 @@ group by id_usuario";
                 $urls_next = $value[1];
                 foreach ($urls_next[1] as $aux_key => $aux_value) {
                     //                $aux_key = str_replace("http://aluned.laraclares.com","", $aux_key) . " - " . round($aux_value,1)."%";
-                    if ($aux_value > 2) {
+                    if ($aux_value > 3) {
                         $aux_key = $aux_key . " - " . round($aux_value, 1) . "%";
                         if (!in_array($aux_key, $array_nodes)) {
                             $array_nodes[$aux_key] = $aux_key;

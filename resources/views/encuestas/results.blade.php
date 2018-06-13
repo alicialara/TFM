@@ -301,7 +301,6 @@
         create_graph_from_gephi("/public/uploads/oa_1.json", 'mynetwork1', 'nodeContent1')
         create_graph_from_gephi("/public/uploads/oa_2.json", 'mynetwork2', 'nodeContent2')
         create_graph_from_gephi("/public/uploads/oa_3.json", 'mynetwork3', 'nodeContent3')
-
     });
 </script>
 @endpush
