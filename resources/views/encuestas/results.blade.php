@@ -172,7 +172,6 @@
 @push('scripts_datatables')
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script>
-
     $( document ).ready(function() {
         var chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
@@ -184,15 +183,13 @@
                 type: "doughnut",
                 startAngle: 60,
                 //innerRadius: 60,
-                indexLabelFontSize: 17,
+                indexLabelFontSize: 13,
                 indexLabel: "{label} - #percent%",
                 toolTipContent: "<b>{label}:</b> {y} (#percent%)",
                 dataPoints: JSON.parse($('#data_pie_1').text())
             }]
         });
         chart.render();
-
-
         var chart = new CanvasJS.Chart("chartContainer2", {
             animationEnabled: true,
             title: {
@@ -201,9 +198,9 @@
             },
             data: [{
                 type: "doughnut",
-                startAngle: 60,
+                startAngle: 20,
                 //innerRadius: 60,
-                indexLabelFontSize: 17,
+                indexLabelFontSize: 13,
                 indexLabel: "{label} - #percent%",
                 toolTipContent: "<b>{label}:</b> {y} (#percent%)",
                 dataPoints: JSON.parse($('#data_pie_2').text())
